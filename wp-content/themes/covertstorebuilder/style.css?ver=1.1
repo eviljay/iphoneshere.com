@@ -1,0 +1,305 @@
+/*
+Theme Name: Covert Store Builder Theme
+Theme URI: http://imwealthbuilders.com/newplugins
+Description: Covert Store Builder is the world's first intelligent, self optimizing WP affiliate store theme. Easily build profit pulling affiliate stores with high converting products from Amazon, Commission Junction and more. Automatically add your members to your own mailing list. Covert Store Builder also comes with a lot of customizeable features, most of them available through the "Theme Options"... And if you are looking for a way to automatically populate your affiliate stores with products, you should take a look at the <a href="http://covertstorebuilder.com/upgrade" target="_blank">Covert Store Content</a> plugin.
+
+Author: <a href="http://imwealthbuilders.com/newplugins" target="_blank">IM Wealth Builders</a>
+Version: 1.1
+Tags: light, white, gray, one-column, two-columns, left-sidebar, right-sidebar, flexible-width, custom-background, custom-colors, custom-header, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, photo bloging
+*/
+
+.container-fluid { max-width: 970px;margin: 0 auto;}
+.pull-left { float: left;}
+.pull-right { float: right;}
+
+/***********************************************************************************************/
+/* Header Styles                                                                               */
+/***********************************************************************************************/
+.site-header { position: relative; }
+.site-header hgroup {margin: 0 auto; max-width: 930px; padding: 0 20px;	min-height: 130px; width: 100%;}
+.site-header > a {color: #141412; text-decoration: none;}
+.site-title {font-size: 35px;font-weight: bold;line-height: 1;margin: 0;padding: 15px 0 10px;}
+.site-description {font-weight: 300;font-size: 15px;margin: 0;line-height: 15px;}
+
+#site-navigation {font-size: 13px; overflow: visible; font-weight: bold; top:5px; right: 5px; position: absolute;}
+#site-navigation ul ul.children { top: 21px;}
+#site-navigation ul, #social-navigation ul { list-style: none outside none; position: relative; display: inline-table;}
+#site-navigation ul li { float: left; margin: 0 5px 0 0;}
+#site-navigation ul li:after { content: " | ";}
+#site-navigation ul li.last:after{ content: '';}
+#social-navigation {text-align: center;}
+#social-navigation ul { margin: 0;}
+#social-navigation ul li { float: left; margin: 0;}
+
+#page-navigation { margin: 0; font-size: 12px; font-weight: bold;font-family: verdana; padding: 5px 0; text-align: center;}
+#page-navigation ul { list-style: none outside none; position: relative; display: inline-table; margin: 0;}
+#page-navigation ul li { float: left; }
+#page-navigation ul > li a { display: block; padding-right: 15px; text-align: center;}
+#page-navigation ul ul.children, #site-navigation ul ul.children { z-index: 105; display: None; position: absolute; top:  100%; font-size: 12px;}
+#page-navigation ul ul.children li { float: none;  position: relative;min-width: 100px;}
+#page-navigation ul ul.children li a, #site-navigation ul ul.children li a { padding: 1px 5px; text-align: left; display: block;}
+#page-navigation ul ul.children ul, #site-navigation ul ul.children ul {left: 99%;top: 0px;position: absolute; }
+#page-navigation  li.drop-down span { background-image: url("images/downarrow.png"); height: 10px; left: 2px; width: 10px; background-repeat: no-repeat; position: relative; display: inline-block;}
+#page-navigation ul li:hover > ul, #site-navigation ul li:hover > ul {display: block;}
+
+#post-navigation { margin: 5px 0 0; padding: 0; font-size: 12px; font-weight: bold;font-family: verdana; text-align: left;}
+#post-navigation ul { list-style: none outside none; position: relative; display: inline-table; margin: 0;}
+#post-navigation ul li { float: left; font-weight: normal; }
+#post-navigation ul li.current { font-weight: bold; }
+#post-navigation ul > li a { display: block; padding: 0px 15px; text-align: center;}
+
+#search { float: right; margin: 2px; z-index: 101;}
+#search label { display: none; }
+#search form, #search input[type=text] { margin: 0;}
+#search input[type=submit] { background: url(images/search.png) no-repeat; border-color: #C2C0C0 #CCCACA #D1CFCF; border-style: solid; border-width: 1px; border-left-width: 0; font-weight: inherit; outline: medium none; width: 30px; height:  30px; cursor: pointer; text-indent: -100px; padding: 0; margin-top: 0px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+
+.social-buttons { list-style: none outside none; margin: 0; padding: 0; overflow: hidden;}
+.social-buttons li { float: left}
+.social-buttons li a { background: url("images/social-icons.png") no-repeat scroll 0 0 transparent; display: block; padding: 9px 5px 7px 30px; font-weight: normal;}
+.social-buttons li.story-share-tweet a { background-position: 10px -61px;}
+.social-buttons li.story-share-fb a { background-position: 10px -94px;}
+.social-buttons li.story-share-pin a { background-position: 10px -127px;}
+.social-buttons li.story-share-linkin a { background-position: 10px -160px;}
+.social-buttons li.story-share-gplus a { background-position: 10px -190px;}
+
+/***********************************************************************************************/
+/*Styles for modal login, register forms                                                       */
+/***********************************************************************************************/
+#smcf-overlay {background-color:#3D3D3D;}
+#smcf-container {width:350px;}
+#smcf-container a.modalCloseImg {background:url(images/closex.png) no-repeat; width:28px;	height:28px; display:inline; z-index:3200; position:absolute; top:-10px; right:-13px; cursor:pointer;}
+#smcf-container #login_error {background-color: #ffebe8; border:1px solid #c00; margin-bottom:8px; padding:6px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px;}
+#smcf-container .message {background-color:#ffffe0; border-color:#e6db55;padding: 5px;}
+#smcf-container form {background:#fff; border:1px solid #e5e5e5; font-weight:normal; margin:0 auto; padding:16px; text-align:left; -moz-border-radius:11px; -webkit-border-radius:11px; border-radius:5px; -moz-box-shadow:rgba(153,153,153,1) 0 4px 18px; -webkit-box-shadow:rgba(153,153,153,1) 0 4px 18px; box-shadow:rgba(153,153,153,1) 0 4px 18px;}
+#smcf-container form label {color:#777; font-size:13px; margin-bottom: 0px;}
+#smcf-container form p {margin:0;}
+#smcf-container form .forgetmenot {font-size:11px; font-weight:normal; float:left; line-height:19px; margin-bottom:0;}
+#smcf-container form .submit input {background-color:#257ea8; border:1px solid #6D6D6D; color:#fff; font-weight:bold; padding:3px 10px; font-size:12px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; cursor:pointer; text-decoration:none; }
+#smcf-container form .submit {float:right;}
+#smcf-container form .submit input.smcf-close {background-color:#c00;}
+#smcf-container .title {color:#257ea8; font-size:18px; padding-bottom:7px;}
+#smcf-container .nav {clear:both; color:#888; padding-top:5px; text-align:center;font-size:12px !important;font-weight:bold !important;}
+#smcf-container .nav a , #smcf-container .nav a :visited {font-size:12px !important;font-weight:bold !important;}
+#smcf-container .reg_passmail {clear:both; color:#666; font-weight:bold; padding-bottom:16px; text-align:center;}
+#smcf-container .firstname,
+#smcf-container .lastname,
+#smcf-container .user_login,
+#smcf-container .user_pass,
+#smcf-container .user_login,
+#smcf-container .user_email {font-size:16px; width:97%; padding:3px; margin-top:2px; margin-right:6px; margin-bottom:5px; border:1px solid #e5e5e5; background:#fbfbfb;}
+#smcf-container .rememberme {margin-top: 0;}
+.smcf-activity {background:url(images/loading.gif) center no-repeat; height:32px; margin-bottom:12px;}
+
+/***********************************************************************************************/
+/* Main Content Styles                                                                         */
+/***********************************************************************************************/
+#mainCarousel { height: 257px; margin-left: 3px;}
+#mainCarousel .carousel-inner > .item > a { display: inline-block;}
+#mainCarousel .carousel-inner > .item > a { width: 300px; height: 250px; max-height: 100%; text-align: center;}
+#mainCarousel .carousel-inner > .item > a > img { max-height: 100%; display: inline-block;}
+#mainCarousel .carousel-inner > .item > .content, .the-post .content  { width:  320px; float: right; margin-left: 5px;}
+#mainCarousel .carousel-inner > .item > .content .title, .the-post h1.title { text-align: center; font-size: 14px;line-height: 14px; max-height: 42px; overflow: hidden;}
+#mainCarousel .carousel-inner > .item > .content .stats, .the-post .stats { margin-top: 8px; text-align: center; font-size: 11px; color: #606060;}
+#mainCarousel .carousel-inner > .item > .content .description, .the-post .description { margin-top: 8px; text-align: justify; font-size: 12px; line-height: 16px;}
+#mainCarousel .carousel-inner > .item > .content .description { max-height: 144px; overflow: hidden;}
+
+.carousel-thumbs-row {margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #CCCCCC}
+.carousel-thumbs { text-align: center;}
+.carousel-thumbs li { display: inline-block; line-height: 14px; list-style-type: none; margin: 0 2px 0 0; vertical-align: top; width: 56px; height:  56px; overflow: hidden;}
+.carousel-thumbs a { width: 50px; height:  50px; overflow: hidden;}
+.carousel-thumbs a {background: none repeat scroll 0 0 #FFFFFF; border: 3px solid #E6E6E6;  padding: 0; display:  inline-block;}
+.carousel-thumbs img { max-height: 100%;}
+.carousel-thumbs a.active {border: 3px solid #F79403;}
+
+.price { font-family: Tahoma; font-size: 20px; font-weight: bold; padding: 4px 0 0;}
+.wishlistlink { font-size: 12px; margin-top: 6px; color: #5C82EF; font-weight: bold; clear: left; display: block;line-height: 12px;}
+
+.post{overflow: hidden; height: 447px; position: relative; padding: 0; margin-bottom: 20px;}
+.post .post_thumb {overflow: hidden; width: 300px; height: 250px; border: 1px solid #CCCCCC; background-color: #FFFFFF; margin: 0 0 0 2px; text-align: center;}
+.post .post_thumb img {max-width: 100%; max-height: 100%;}
+.post .title { font-size: 16px; font-weight: bold; line-height: 19px; margin:  0 0 2px; text-align: center; height: 40px; overflow: hidden;}
+.post .description {font-size: 12px; line-height: 14px; margin: 3px 4px 2px; height: 115px; overflow: hidden; text-align: justify;}
+.post .description p { margin: 0 0 2px;}
+.post .wishlistlink { margin-top: 1px; }
+.post .actions {padding: 2px 5px 0px 5px;line-height: 14px;}
+
+.posts-wrapper .thumbnails { margin: 10px 0 4px; text-align: center;}
+.posts-wrapper .thumbnails a {background: none repeat scroll 0 0 #FFFFFF; display: inline-block; margin: 0 6px 0 0; width: 153px; height: 128px; float: left;}
+.posts-wrapper .thumbnails a img {max-height: 100%;}
+.posts-wrapper .the-post {margin-left: 15px !important; }
+.posts-wrapper .the-page {margin-left: 10px !important; }
+.posts-wrapper .span8.the-post { max-width: 625px; }
+.the-post { margin-top: 10px; }
+.the-post .thumb { float: left; width: 300px; height: 250px; text-align: center;}
+.the-post .thumb a { width: 100%; height: 100%;}
+
+.the-post .thumb a img { max-height: 100%;}
+.the-post .social-actions { clear:  both;}
+
+.the-post #comments {background-color: #DDDDDD; padding: 0px 10px 10px; font-size: 14px;}
+.the-page #comments {width: 96%;}
+.the-post #comments h3 {font-size: 20px; margin: 0;}
+
+.the-post .comment:after { clear: both; content: " ";  display: block; height: 0; visibility: hidden;}
+.the-post .comment .fn, .the-post .comment .says, .the-post .comment .comment-meta, .the-post .comment .reply {font-size: 12px;}
+.the-post .comment { background-color: #F2F0F0; margin: 0 -15px; padding: 10px 15px; border-bottom: 1px solid #D9D4D4; border-top: 1px solid #FCFAFA; overflow: hidden;}
+.the-post .commentlist {margin: 0 15px; color: #524D4D;}
+.the-post .comment .avatar { float: left; margin-top: 5px; margin-right: 6px; width: 52px; height: 52px;}
+.the-post .comment p { margin: 5px 0 0 56px; overflow: hidden; word-wrap: break-word; font-size: 12px; }
+.the-post .comment .reply {clear:  left; margin: 0;text-align: right;}
+.the-post #respond { background-color: #F2F0F0;  padding: 10px 15px; border-bottom: 1px solid #D9D4D4; border-top: 1px solid #FCFAFA; overflow: hidden;}
+.the-post #respond h3 {font-size: 20px; margin: 0;}
+.the-post #respond label { display: inline-block; width: 35px;}
+.the-post #respond .required { color: #ff0000; font-weight:bold;margin-right: 5px;}
+.the-post .archive-title {font-size: 30px; color: #606060; margin: 0;}
+.the-post .search-title {font-size: 30px; color: #606060; margin: 0 0 10px 0;}
+.the-post .archive-meta {font-size: 13px; color: #606060;}
+.the-post .cat-post-list, .wishlist-post .wish-post-list, .post-list  { margin: 0px}
+.the-post .cat-post-list li, .wishlist-post .wish-post-list li, .post-list li { display: inline-block; line-height: 14px; list-style-type: none; margin: 0 15px 10px 0; padding: 15px 0 5px; vertical-align: top; width: 170px; }
+.the-post .cat-post-list li a.image { height: 140px; display: inline-block;width: 100%; text-align: center;}
+.the-post .cat-post-list li a.image img { max-height: 100%;}
+.the-post .cat-post-list li .title {font-size: 12px; font-weight: normal; margin: 4px 0 0;text-decoration: none; display:block; text-align: center;}
+.the-post .cat-post-list li .price {color: #606060; font-size: 12px; font-weight: normal; text-align: center; display: block; clear: both;}
+
+.the-page h1.title { text-align: left; font-size: 24px;line-height: 24px; }
+
+.post-list li { width:  310px; margin: 0 3px 0 7PX;}
+.post-list li.advert { margin-left: 5px; width:  305px;}
+
+.wishlist-post .share-wishlist {width:  90%;display: inline-block; font-size: 16px;}
+.wishlist-post .social-actions {margin-left: -12px; font-size: 14px;}
+.wishlist-post .wish-post-list li { width: 300px;}
+.wishlist-post .wish-post-list li a.image { width: 300px; height: 250px; display: inline-block;text-align: center;}
+.wishlist-post .wish-post-list li a.image img { max-height: 100%;}
+.wishlist-post .wish-post-list li .title {font-size: 14px; margin-bottom: 4px; height: 40px; line-height: 19px; overflow: hidden; text-align: center; display: block;}
+.wishlist-post .wish-post-list li a.del-wishlistlink{margin-top: 5px; text-align: center; display: block; clear: both;}
+.wishlist-post .actions {margin-top: 15px; line-height: 24px;}
+
+/***********************************************************************************************/
+/* Footer Styles                                                                               */
+/***********************************************************************************************/
+
+#footer-wrapper  {position: relative; margin-top: 1em; padding: 1.625em 7.6%; overflow: hidden;}
+#footer {width: 1007px; margin: 0 auto; position: relative; min-height: 50px;}
+
+/***********************************************************************************************/
+/* Widget Styles                                                                               */
+/***********************************************************************************************/
+.widget-title {font-weight: bold; padding: 5px; margin:  0px; font-size: 20px; line-height: 20px;}
+.widget-container { margin-bottom:  5px;}
+li.widget-container {list-style: none;}
+#sidebar-featured-widget, #post-sidebar { font-size: 1em; }
+#sidebar-featured-widget {height: 255px;overflow: hidden; margin-left: 10px;}
+#post-sidebar.left {width: 305px;}
+#post-sidebar.right{margin-left: 15px;}
+#post-sidebar > li { list-style: none outside none;}
+.content_sidebar { margin-top:  10px; }
+.widget_popularproducts .widget-title, .widget_newestproducts .widget-title { margin-bottom: 5px;}
+.widget_popularproducts ul, .widget_newestproducts ul { margin: 0; padding: 0;}
+.widget_popularproducts ul li, .widget_newestproducts ul li { display: inline-block; margin-bottom: 6px; float: left;}
+.widget_popularproducts ul li a img, .widget_newestproducts ul li a img { max-height: 100%;}
+.widget_popularproducts ul li a, .widget_newestproducts ul li a {background: none repeat scroll 0 0 #FFFFFF; width: 150px; margin-right: 1px; height: 128px; display: inline-block;}
+#post-sidebar.left .widget_popularproducts ul li, #post-sidebar.left .widget_newestproducts ul li  { margin-right: 3px; }
+#post-sidebar.right .widget_popularproducts ul li, #post-sidebar.right .widget_newestproducts ul li  { margin-right: 1px; }
+
+#widgets_404 { width:  96%;}
+#widgets_404 ul {list-style: none;}
+.content_sidebar ul li, #widgets_404 ul li {font-size: 13px; position: relative; line-height: 16px; }
+
+#footer .widget-title {font-size: 13px;}
+#footer .widget-area { font-size: 13px;}
+#footer .widget-area ul {list-style: none;}
+#footer .widget-areaul li {font-size: 0.9231em; position: relative; }
+#footer .widget-area ul ul {list-style: disc;}
+#footer .widget-area ul ul li {margin-left: 15px;}
+#footer .widget-area ul ul li a { font-weight: normal; display: block;}
+#footer.two .widget-area {	float: left; margin-right: 3.7%;	width: 48.1%;}
+#footer.two .widget-area + .widget-area {	margin-right: 0;}
+#footer.three .widget-area { float: left; margin-right: 3.7%; width: 30.85%;}
+#footer.three .widget-area + .widget-area + .widget-area {margin-right: 0;}
+
+/***********************************************************************************************/
+/* Page Numbers and Navigation Styles                                                          */
+/***********************************************************************************************/
+.pagination_wrapper { padding: 3px 0 0 3px; font-size: 0.90em; line-height:1em; }
+.pagination {display: inline-block;}
+.pagination span, .pagination a {display:block;float:left;margin: 2px 2px 2px 0;padding:6px 9px 5px 9px;text-decoration:none;width:auto;color:#fff;background: #2E2E2E;font-weight: normal;}
+.pagination a:hover{color:#fff;background: #3279BB;}
+.pagination .current{padding:6px 9px 5px 9px;background: #3279BB;color:#fff;}
+
+/***********************************************************************************************/
+/* Mobile & Tablet Styles                                                                      */
+/***********************************************************************************************/
+
+/* Large desktop */
+@media (min-width: 1200px) {  }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  
+body { margin: 0px 10px;}
+input#s { width:  175px;}
+#mainCarousel .carousel-inner > .item > .content, .the-post .content { width:  51.1006%; }
+#mainCarousel .carousel-inner > .item > a, .the-post .thumb { width: 47.1698%;}
+.the-post .cat-post-list, .wishlist-post .wish-post-list, .post-list  { margin: 0px 20px 0px 30px;}
+.post-list li { margin-right: 20px;}
+.search-results .post .post_thumb { margin: 0 auto 5px auto;width: 236px;}
+#post-sidebar.right{margin-left: 5px;}
+.widget_popularproducts ul li a, .widget_newestproducts ul li a {width: 110px; height: 93px;}
+
+#footer {width: 100%; }
+#footer-wrapper  {margin-top: 1em; padding: 0.625em 1.6%; }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+body { margin: 0px;}
+input#s { width:  175px;}
+form {margin-left:  10px; margin-right: 10px;}
+.site-header hgroup { min-height: 110px}
+#site-navigation, #post-navigation { position: relative;text-align: center;}
+#site-navigation ul { margin-bottom: 2px;}
+.site-header hgroup { padding: 0px;}
+.the-post .content { width:  51.1006%; }
+.the-post .thumb { width: 39.16%;}
+.the-post .content {  float: left;}
+.the-post .description,.the-post #comments,.the-page #description,.the-page #comments { margin-right: 10px;}
+.the-page #comments { width:  95%;}
+.post {height: auto;}
+.post .post_thumb { margin: 0 auto 5px auto;}
+.post .description {height: auto; margin-bottom: 5px;}
+.post-list,.wishlist-post,.cat-post-list {text-align: center;}
+.posts-wrapper .thumbnails a {width: 145px; height: 121px;}
+#post-sidebar.right{margin-left: 0px;}
+.posts-wrapper .the-post {margin-left: 5px !important; }
+.wishlist-post .share-wishlist {width: 88%;}
+.widget_popularproducts ul, .widget_newestproducts ul {padding:  0px 5px;}
+.widget_popularproducts ul li a, .widget_newestproducts ul li a {width: 110px; height: 93px;}
+#footer {width: 100%; }
+#footer-wrapper  {margin-top: 1em; padding: 0.625em 1.6%; }
+}
+
+@media (max-width: 480px) { 
+h2 {font-size: 24px;line-height: 24px;}
+.site-header hgroup { min-height: 100px}
+.site-title{ font-size: 28px;}
+.site-description {font-size: 14px; line-height: 14px;} 
+.the-page #comments { width:  93%;}
+.posts-wrapper .the-post.wishlist-post {margin-left: 0px !important;}
+.wishlist-post .archive-title {font-size: 24px; line-height: 24px;}
+.wishlist-post .share-wishlist {width: 84%;}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 320px) { 
+body{padding: 0px;}
+.site-title{ font-size: 22px;}
+.site-description {font-size: 12px; line-height: 12px;}
+.search-title {font-size: 22px;}
+.post-list li {width: 100%; margin: 0;}
+.the-post .thumb, .the-post .content {width: 96%;}
+.the-page #comments { width:  90%;}
+.posts-wrapper .thumbnails {display: none;}
+
+.wishlist-post .share-wishlist {width: 78%;}
+#footer.two .widget-area, #footer.three .widget-area {width: 100%; margin-bottom: 10px;}
+}
